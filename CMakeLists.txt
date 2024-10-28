@@ -57,5 +57,5 @@ enable_testing()
 add_test(
     NAME ipfilter_cli
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
-    COMMAND sh -c "cat ${CMAKE_BINARY_DIR}/ip_filter.tsv | ${CMAKE_BINARY_DIR}/ipfilter_cli | md5sum | grep -q '24e7a7b2270daee89c64d3ca5fb3da1a'"
+    COMMAND sh -c "cat ${CMAKE_SOURCE_DIR}/ip_filter.tsv | ${CMAKE_BINARY_DIR}/ipfilter_cli | md5sum | grep -q '24e7a7b2270daee89c64d3ca5fb3da1a'"
     )

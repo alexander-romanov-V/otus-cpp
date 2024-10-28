@@ -1,3 +1,18 @@
-Start testing: Oct 29 00:41 MSK
+Start testing: Oct 29 00:49 MSK
 ----------------------------------------------------------
-End testing: Oct 29 00:41 MSK
+1/1 Testing: ipfilter_cli
+1/1 Test: ipfilter_cli
+Command: "/usr/bin/sh" "-c" "cat /home/fx/projects/otus-cpp/otus-cpp/ip_filter.tsv | /home/fx/projects/otus-cpp/otus-cpp/build/ipfilter_cli | md5sum | grep -q '24e7a7b2270daee89c64d3ca5fb3da1a'"
+Directory: /home/fx/projects/otus-cpp/otus-cpp/build
+"ipfilter_cli" start time: Oct 29 00:49 MSK
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ipfilter_cli" end time: Oct 29 00:49 MSK
+"ipfilter_cli" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 29 00:49 MSK

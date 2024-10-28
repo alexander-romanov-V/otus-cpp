@@ -24,11 +24,39 @@
 	ProcessorClockFrequency="3400"
 	>
 	<Testing>
-		<StartDateTime>Oct 29 00:41 MSK</StartDateTime>
-		<StartTestTime>1730151694</StartTestTime>
-		<TestList/>
-		<EndDateTime>Oct 29 00:41 MSK</EndDateTime>
-		<EndTestTime>1730151694</EndTestTime>
+		<StartDateTime>Oct 29 00:49 MSK</StartDateTime>
+		<StartTestTime>1730152150</StartTestTime>
+		<TestList>
+			<Test>./ipfilter_cli</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>ipfilter_cli</Name>
+			<Path>.</Path>
+			<FullName>./ipfilter_cli</FullName>
+			<FullCommandLine>/usr/bin/sh "-c" "cat /home/fx/projects/otus-cpp/otus-cpp/ip_filter.tsv | /home/fx/projects/otus-cpp/otus-cpp/build/ipfilter_cli | md5sum | grep -q '24e7a7b2270daee89c64d3ca5fb3da1a'"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00648572</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/sh "-c" "cat /home/fx/projects/otus-cpp/otus-cpp/ip_filter.tsv | /home/fx/projects/otus-cpp/otus-cpp/build/ipfilter_cli | md5sum | grep -q '24e7a7b2270daee89c64d3ca5fb3da1a'"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value></Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Oct 29 00:49 MSK</EndDateTime>
+		<EndTestTime>1730152150</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
