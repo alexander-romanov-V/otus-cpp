@@ -1,7 +1,7 @@
 CMakeFiles/test_version_google.dir/test_version_google.cpp.o: \
  /home/fx/projects/otus-cpp/otus-cpp/test_version_google.cpp \
- /usr/include/stdc-predef.h /usr/include/gtest/gtest.h \
- /usr/include/c++/13/cstddef \
+ /usr/include/stdc-predef.h /home/fx/projects/otus-cpp/otus-cpp/lib.h \
+ /usr/include/gtest/gtest.h /usr/include/c++/13/cstddef \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -256,39 +256,4 @@ CMakeFiles/test_version_google.dir/test_version_google.cpp.o: \
  /usr/include/c++/13/cassert /usr/include/assert.h \
  /usr/include/gtest/gtest-test-part.h \
  /usr/include/gtest/gtest-typed-test.h \
- /usr/include/gtest/gtest_pred_impl.h /usr/include/gtest/gtest_prod.h \
- /usr/include/gmock/gmock.h /usr/include/gmock/gmock-actions.h \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/gmock/internal/gmock-internal-utils.h \
- /usr/include/gmock/internal/gmock-port.h \
- /usr/include/gmock/internal/custom/gmock-port.h \
- /usr/include/gmock/internal/gmock-pp.h \
- /usr/include/gmock/gmock-cardinalities.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
- /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
- /usr/include/x86_64-linux-gnu/bits/local_lim.h \
- /usr/include/linux/limits.h \
- /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
- /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /usr/include/gmock/gmock-function-mocker.h \
- /usr/include/gmock/gmock-spec-builders.h \
- /usr/include/gmock/gmock-matchers.h /usr/include/c++/13/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
- /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
- /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
- /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
- /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
- /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /usr/include/gmock/internal/custom/gmock-matchers.h \
- /usr/include/gmock/gmock-more-actions.h \
- /usr/include/gmock/internal/custom/gmock-generated-actions.h \
- /usr/include/gmock/gmock-more-matchers.h \
- /usr/include/gmock/gmock-nice-strict.h
+ /usr/include/gtest/gtest_pred_impl.h /usr/include/gtest/gtest_prod.h
