@@ -63,10 +63,8 @@ CMAKE_BINARY_DIR = /home/fx/projects/otus-cpp/otus-cpp/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/helloworld_cli.dir/all
-all: CMakeFiles/helloworld.dir/all
-all: CMakeFiles/test_version.dir/all
-all: CMakeFiles/test_version_google.dir/all
+all: CMakeFiles/ipfilter_cli.dir/all
+all: CMakeFiles/ipfilter_gtest.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -74,115 +72,61 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/helloworld_cli.dir/clean
-clean: CMakeFiles/helloworld.dir/clean
-clean: CMakeFiles/test_version.dir/clean
-clean: CMakeFiles/test_version_google.dir/clean
+clean: CMakeFiles/ipfilter_cli.dir/clean
+clean: CMakeFiles/ipfilter_gtest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/helloworld_cli.dir
+# Target rules for target CMakeFiles/ipfilter_cli.dir
 
 # All Build rule for target.
-CMakeFiles/helloworld_cli.dir/all: CMakeFiles/helloworld.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles --progress-num=3,4 "Built target helloworld_cli"
-.PHONY : CMakeFiles/helloworld_cli.dir/all
+CMakeFiles/ipfilter_cli.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_cli.dir/build.make CMakeFiles/ipfilter_cli.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_cli.dir/build.make CMakeFiles/ipfilter_cli.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles --progress-num=1,2 "Built target ipfilter_cli"
+.PHONY : CMakeFiles/ipfilter_cli.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/helloworld_cli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/helloworld_cli.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/helloworld_cli.dir/rule
-
-# Convenience name for target.
-helloworld_cli: CMakeFiles/helloworld_cli.dir/rule
-.PHONY : helloworld_cli
-
-# clean rule for target.
-CMakeFiles/helloworld_cli.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/clean
-.PHONY : CMakeFiles/helloworld_cli.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/helloworld.dir
-
-# All Build rule for target.
-CMakeFiles/helloworld.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles --progress-num=1,2 "Built target helloworld"
-.PHONY : CMakeFiles/helloworld.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/helloworld.dir/rule: cmake_check_build_system
+CMakeFiles/ipfilter_cli.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/helloworld.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ipfilter_cli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/helloworld.dir/rule
+.PHONY : CMakeFiles/ipfilter_cli.dir/rule
 
 # Convenience name for target.
-helloworld: CMakeFiles/helloworld.dir/rule
-.PHONY : helloworld
+ipfilter_cli: CMakeFiles/ipfilter_cli.dir/rule
+.PHONY : ipfilter_cli
 
 # clean rule for target.
-CMakeFiles/helloworld.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/clean
-.PHONY : CMakeFiles/helloworld.dir/clean
+CMakeFiles/ipfilter_cli.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_cli.dir/build.make CMakeFiles/ipfilter_cli.dir/clean
+.PHONY : CMakeFiles/ipfilter_cli.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_version.dir
+# Target rules for target CMakeFiles/ipfilter_gtest.dir
 
 # All Build rule for target.
-CMakeFiles/test_version.dir/all: CMakeFiles/helloworld.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles --progress-num=5,6 "Built target test_version"
-.PHONY : CMakeFiles/test_version.dir/all
+CMakeFiles/ipfilter_gtest.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_gtest.dir/build.make CMakeFiles/ipfilter_gtest.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_gtest.dir/build.make CMakeFiles/ipfilter_gtest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles --progress-num=3,4 "Built target ipfilter_gtest"
+.PHONY : CMakeFiles/ipfilter_gtest.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_version.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_version.dir/all
+CMakeFiles/ipfilter_gtest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ipfilter_gtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_version.dir/rule
+.PHONY : CMakeFiles/ipfilter_gtest.dir/rule
 
 # Convenience name for target.
-test_version: CMakeFiles/test_version.dir/rule
-.PHONY : test_version
+ipfilter_gtest: CMakeFiles/ipfilter_gtest.dir/rule
+.PHONY : ipfilter_gtest
 
 # clean rule for target.
-CMakeFiles/test_version.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/clean
-.PHONY : CMakeFiles/test_version.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/test_version_google.dir
-
-# All Build rule for target.
-CMakeFiles/test_version_google.dir/all: CMakeFiles/helloworld.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles --progress-num=7,8 "Built target test_version_google"
-.PHONY : CMakeFiles/test_version_google.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/test_version_google.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_version_google.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 0
-.PHONY : CMakeFiles/test_version_google.dir/rule
-
-# Convenience name for target.
-test_version_google: CMakeFiles/test_version_google.dir/rule
-.PHONY : test_version_google
-
-# clean rule for target.
-CMakeFiles/test_version_google.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/clean
-.PHONY : CMakeFiles/test_version_google.dir/clean
+CMakeFiles/ipfilter_gtest.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_gtest.dir/build.make CMakeFiles/ipfilter_gtest.dir/clean
+.PHONY : CMakeFiles/ipfilter_gtest.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

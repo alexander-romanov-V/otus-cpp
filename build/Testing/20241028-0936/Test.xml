@@ -24,11 +24,39 @@
 	ProcessorClockFrequency="3400"
 	>
 	<Testing>
-		<StartDateTime>Oct 28 14:28 MSK</StartDateTime>
-		<StartTestTime>1730114900</StartTestTime>
-		<TestList/>
-		<EndDateTime>Oct 28 14:28 MSK</EndDateTime>
-		<EndTestTime>1730114900</EndTestTime>
+		<StartDateTime>Oct 28 21:02 MSK</StartDateTime>
+		<StartTestTime>1730138551</StartTestTime>
+		<TestList>
+			<Test>./ipfilter_gtest</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>ipfilter_gtest</Name>
+			<Path>.</Path>
+			<FullName>./ipfilter_gtest</FullName>
+			<FullCommandLine>/home/fx/projects/otus-cpp/otus-cpp/build/ipfilter_gtest</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.00189546</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/home/fx/projects/otus-cpp/otus-cpp/build/ipfilter_gtest</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkEELgkAQhe/7K+aYB5f8AR2CwkOgoXVaJFbaQnBnZZ2tv9/akmgg+E4D75t5vBG7URUUDrHBJyRAqid4WKN/c+8aUpyJeFQFaWtq2QZf4auxBrVCzyqKXfcHT29e/JRa47pMasUEFNcMvqrmFi9dPWzdEg8F5adlCDZb0H20MjfQQIZkG7F1zUhJG9/NG5mY/m3pX2Al8nmO73Hel+XxMJQNLGcfKEJ3Gw==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Oct 28 21:02 MSK</EndDateTime>
+		<EndTestTime>1730138551</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
