@@ -50,11 +50,12 @@ set(CPACK_PACKAGE_CONTACT example@example.com)
 
 include(CPack)
 
+list(APPEND CMAKE_CTEST_ARGUMENTS "--output-on-failure")
 enable_testing()
 
 # add_test(ipfilter_gtest ipfilter_gtest)
 add_test(
     NAME ipfilter_cli
-    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-    COMMAND sh -c "cat ${CMAKE_BINARY_DIR}/ip_filter.tsv | ${CMAKE_CURRENT_BINARY_DIR}/ipfilter_cli | md5sum | grep -q '24e7a7b2270daee89c64d3ca5fb3da1a'"
+    WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+    COMMAND sh -c "cat ${CMAKE_BINARY_DIR}/ip_filter.tsv | ${CMAKE_BINARY_DIR}/ipfilter_cli | md5sum | grep -q '24e7a7b2270daee89c64d3ca5fb3da1a'"
     )
