@@ -230,6 +230,19 @@ test_version/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/build
 .PHONY : test_version/fast
 
+#=============================================================================
+# Target rules for targets named test_version_google
+
+# Build rule for target.
+test_version_google: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_version_google
+.PHONY : test_version_google
+
+# fast build rule for target.
+test_version_google/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/build
+.PHONY : test_version_google/fast
+
 lib.o: lib.cpp.o
 .PHONY : lib.o
 
@@ -302,6 +315,30 @@ test_version.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/test_version.cpp.s
 .PHONY : test_version.cpp.s
 
+test_version_google.o: test_version_google.cpp.o
+.PHONY : test_version_google.o
+
+# target to build an object file
+test_version_google.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/test_version_google.cpp.o
+.PHONY : test_version_google.cpp.o
+
+test_version_google.i: test_version_google.cpp.i
+.PHONY : test_version_google.i
+
+# target to preprocess a source file
+test_version_google.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/test_version_google.cpp.i
+.PHONY : test_version_google.cpp.i
+
+test_version_google.s: test_version_google.cpp.s
+.PHONY : test_version_google.s
+
+# target to generate assembly for a file
+test_version_google.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/test_version_google.cpp.s
+.PHONY : test_version_google.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -320,6 +357,7 @@ help:
 	@echo "... helloworld"
 	@echo "... helloworld_cli"
 	@echo "... test_version"
+	@echo "... test_version_google"
 	@echo "... lib.o"
 	@echo "... lib.i"
 	@echo "... lib.s"
@@ -329,6 +367,9 @@ help:
 	@echo "... test_version.o"
 	@echo "... test_version.i"
 	@echo "... test_version.s"
+	@echo "... test_version_google.o"
+	@echo "... test_version_google.i"
+	@echo "... test_version_google.s"
 .PHONY : help
 
 

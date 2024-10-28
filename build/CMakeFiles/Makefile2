@@ -66,6 +66,7 @@ CMAKE_BINARY_DIR = /home/fx/projects/otus-cpp/otus-cpp/build
 all: CMakeFiles/helloworld_cli.dir/all
 all: CMakeFiles/helloworld.dir/all
 all: CMakeFiles/test_version.dir/all
+all: CMakeFiles/test_version_google.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -76,6 +77,7 @@ preinstall:
 clean: CMakeFiles/helloworld_cli.dir/clean
 clean: CMakeFiles/helloworld.dir/clean
 clean: CMakeFiles/test_version.dir/clean
+clean: CMakeFiles/test_version_google.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -155,6 +157,32 @@ test_version: CMakeFiles/test_version.dir/rule
 CMakeFiles/test_version.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/clean
 .PHONY : CMakeFiles/test_version.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/test_version_google.dir
+
+# All Build rule for target.
+CMakeFiles/test_version_google.dir/all: CMakeFiles/helloworld.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles --progress-num=7,8 "Built target test_version_google"
+.PHONY : CMakeFiles/test_version_google.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_version_google.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_version_google.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_version_google.dir/rule
+
+# Convenience name for target.
+test_version_google: CMakeFiles/test_version_google.dir/rule
+.PHONY : test_version_google
+
+# clean rule for target.
+CMakeFiles/test_version_google.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/clean
+.PHONY : CMakeFiles/test_version_google.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

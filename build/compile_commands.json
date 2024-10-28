@@ -16,5 +16,11 @@
   "command": "/usr/bin/g++ -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB  -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/test_version.dir/test_version.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/test_version.cpp",
   "file": "/home/fx/projects/otus-cpp/otus-cpp/test_version.cpp",
   "output": "CMakeFiles/test_version.dir/test_version.cpp.o"
+},
+{
+  "directory": "/home/fx/projects/otus-cpp/otus-cpp/build",
+  "command": "/usr/bin/g++   -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/test_version_google.dir/test_version_google.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/test_version_google.cpp",
+  "file": "/home/fx/projects/otus-cpp/otus-cpp/test_version_google.cpp",
+  "output": "CMakeFiles/test_version_google.dir/test_version_google.cpp.o"
 }
 ]

@@ -66,4 +66,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/helloworld_cli.dir/DependInfo.cmake"
   "CMakeFiles/helloworld.dir/DependInfo.cmake"
   "CMakeFiles/test_version.dir/DependInfo.cmake"
+  "CMakeFiles/test_version_google.dir/DependInfo.cmake"
   )
