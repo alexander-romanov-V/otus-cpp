@@ -1,7 +1,5 @@
-/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/helloworld_cli.dir
-/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/helloworld.dir
-/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/test_version.dir
-/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/test_version_google.dir
+/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/ipfilter_cli.dir
+/home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/ipfilter_gtest.dir
 /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/package.dir
 /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/package_source.dir
 /home/fx/projects/otus-cpp/otus-cpp/build/CMakeFiles/test.dir

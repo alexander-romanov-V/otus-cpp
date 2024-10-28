@@ -192,87 +192,61 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named helloworld_cli
+# Target rules for targets named ipfilter_cli
 
 # Build rule for target.
-helloworld_cli: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloworld_cli
-.PHONY : helloworld_cli
+ipfilter_cli: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ipfilter_cli
+.PHONY : ipfilter_cli
 
 # fast build rule for target.
-helloworld_cli/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/build
-.PHONY : helloworld_cli/fast
+ipfilter_cli/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_cli.dir/build.make CMakeFiles/ipfilter_cli.dir/build
+.PHONY : ipfilter_cli/fast
 
 #=============================================================================
-# Target rules for targets named helloworld
+# Target rules for targets named ipfilter_gtest
 
 # Build rule for target.
-helloworld: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 helloworld
-.PHONY : helloworld
+ipfilter_gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ipfilter_gtest
+.PHONY : ipfilter_gtest
 
 # fast build rule for target.
-helloworld/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/build
-.PHONY : helloworld/fast
+ipfilter_gtest/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_gtest.dir/build.make CMakeFiles/ipfilter_gtest.dir/build
+.PHONY : ipfilter_gtest/fast
 
-#=============================================================================
-# Target rules for targets named test_version
-
-# Build rule for target.
-test_version: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_version
-.PHONY : test_version
-
-# fast build rule for target.
-test_version/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/build
-.PHONY : test_version/fast
-
-#=============================================================================
-# Target rules for targets named test_version_google
-
-# Build rule for target.
-test_version_google: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_version_google
-.PHONY : test_version_google
-
-# fast build rule for target.
-test_version_google/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/build
-.PHONY : test_version_google/fast
-
-lib.o: lib.cpp.o
-.PHONY : lib.o
+ipfilter_gtest.o: ipfilter_gtest.cpp.o
+.PHONY : ipfilter_gtest.o
 
 # target to build an object file
-lib.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.o
-.PHONY : lib.cpp.o
+ipfilter_gtest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_gtest.dir/build.make CMakeFiles/ipfilter_gtest.dir/ipfilter_gtest.cpp.o
+.PHONY : ipfilter_gtest.cpp.o
 
-lib.i: lib.cpp.i
-.PHONY : lib.i
+ipfilter_gtest.i: ipfilter_gtest.cpp.i
+.PHONY : ipfilter_gtest.i
 
 # target to preprocess a source file
-lib.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.i
-.PHONY : lib.cpp.i
+ipfilter_gtest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_gtest.dir/build.make CMakeFiles/ipfilter_gtest.dir/ipfilter_gtest.cpp.i
+.PHONY : ipfilter_gtest.cpp.i
 
-lib.s: lib.cpp.s
-.PHONY : lib.s
+ipfilter_gtest.s: ipfilter_gtest.cpp.s
+.PHONY : ipfilter_gtest.s
 
 # target to generate assembly for a file
-lib.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld.dir/build.make CMakeFiles/helloworld.dir/lib.cpp.s
-.PHONY : lib.cpp.s
+ipfilter_gtest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_gtest.dir/build.make CMakeFiles/ipfilter_gtest.dir/ipfilter_gtest.cpp.s
+.PHONY : ipfilter_gtest.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_cli.dir/build.make CMakeFiles/ipfilter_cli.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -280,7 +254,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_cli.dir/build.make CMakeFiles/ipfilter_cli.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -288,56 +262,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/helloworld_cli.dir/build.make CMakeFiles/helloworld_cli.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ipfilter_cli.dir/build.make CMakeFiles/ipfilter_cli.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-test_version.o: test_version.cpp.o
-.PHONY : test_version.o
-
-# target to build an object file
-test_version.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/test_version.cpp.o
-.PHONY : test_version.cpp.o
-
-test_version.i: test_version.cpp.i
-.PHONY : test_version.i
-
-# target to preprocess a source file
-test_version.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/test_version.cpp.i
-.PHONY : test_version.cpp.i
-
-test_version.s: test_version.cpp.s
-.PHONY : test_version.s
-
-# target to generate assembly for a file
-test_version.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version.dir/build.make CMakeFiles/test_version.dir/test_version.cpp.s
-.PHONY : test_version.cpp.s
-
-test_version_google.o: test_version_google.cpp.o
-.PHONY : test_version_google.o
-
-# target to build an object file
-test_version_google.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/test_version_google.cpp.o
-.PHONY : test_version_google.cpp.o
-
-test_version_google.i: test_version_google.cpp.i
-.PHONY : test_version_google.i
-
-# target to preprocess a source file
-test_version_google.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/test_version_google.cpp.i
-.PHONY : test_version_google.cpp.i
-
-test_version_google.s: test_version_google.cpp.s
-.PHONY : test_version_google.s
-
-# target to generate assembly for a file
-test_version_google.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_version_google.dir/build.make CMakeFiles/test_version_google.dir/test_version_google.cpp.s
-.PHONY : test_version_google.cpp.s
 
 # Help Target
 help:
@@ -354,22 +280,14 @@ help:
 	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... helloworld"
-	@echo "... helloworld_cli"
-	@echo "... test_version"
-	@echo "... test_version_google"
-	@echo "... lib.o"
-	@echo "... lib.i"
-	@echo "... lib.s"
+	@echo "... ipfilter_cli"
+	@echo "... ipfilter_gtest"
+	@echo "... ipfilter_gtest.o"
+	@echo "... ipfilter_gtest.i"
+	@echo "... ipfilter_gtest.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... test_version.o"
-	@echo "... test_version.i"
-	@echo "... test_version.s"
-	@echo "... test_version_google.o"
-	@echo "... test_version_google.i"
-	@echo "... test_version_google.s"
 .PHONY : help
 
 

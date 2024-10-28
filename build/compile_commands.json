@@ -1,26 +1,14 @@
 [
 {
   "directory": "/home/fx/projects/otus-cpp/otus-cpp/build",
-  "command": "/usr/bin/g++  -I/home/fx/projects/otus-cpp/otus-cpp/build -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/helloworld.dir/lib.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/lib.cpp",
-  "file": "/home/fx/projects/otus-cpp/otus-cpp/lib.cpp",
-  "output": "CMakeFiles/helloworld.dir/lib.cpp.o"
-},
-{
-  "directory": "/home/fx/projects/otus-cpp/otus-cpp/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/helloworld_cli.dir/main.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/main.cpp",
+  "command": "/usr/bin/g++  -I/home/fx/projects/otus-cpp/otus-cpp/build -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ipfilter_cli.dir/main.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/main.cpp",
   "file": "/home/fx/projects/otus-cpp/otus-cpp/main.cpp",
-  "output": "CMakeFiles/helloworld_cli.dir/main.cpp.o"
+  "output": "CMakeFiles/ipfilter_cli.dir/main.cpp.o"
 },
 {
   "directory": "/home/fx/projects/otus-cpp/otus-cpp/build",
-  "command": "/usr/bin/g++ -DBOOST_TEST_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -DBOOST_UNIT_TEST_FRAMEWORK_NO_LIB  -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/test_version.dir/test_version.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/test_version.cpp",
-  "file": "/home/fx/projects/otus-cpp/otus-cpp/test_version.cpp",
-  "output": "CMakeFiles/test_version.dir/test_version.cpp.o"
-},
-{
-  "directory": "/home/fx/projects/otus-cpp/otus-cpp/build",
-  "command": "/usr/bin/g++   -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/test_version_google.dir/test_version_google.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/test_version_google.cpp",
-  "file": "/home/fx/projects/otus-cpp/otus-cpp/test_version_google.cpp",
-  "output": "CMakeFiles/test_version_google.dir/test_version_google.cpp.o"
+  "command": "/usr/bin/g++   -g -std=gnu++14 -Wall -Wextra -pedantic -Werror -o CMakeFiles/ipfilter_gtest.dir/ipfilter_gtest.cpp.o -c /home/fx/projects/otus-cpp/otus-cpp/ipfilter_gtest.cpp",
+  "file": "/home/fx/projects/otus-cpp/otus-cpp/ipfilter_gtest.cpp",
+  "output": "CMakeFiles/ipfilter_gtest.dir/ipfilter_gtest.cpp.o"
 }
 ]
