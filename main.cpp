@@ -4,8 +4,9 @@
 #include <string>
 #include <vector>
 
-#include <array>
 #include <algorithm>
+
+#define UNUSED(var) (void)var
 
 // ("",  '.') -> [""]
 // ("11", '.') -> ["11"]
@@ -58,9 +59,9 @@ int main()
 
         // DONE print function
         auto print_pool = [](auto const& title, auto const& p) { 
-                std::cout <<std::endl << title << std::endl;
+                UNUSED(title); // std::cout <<std::endl << title << std::endl;
                 for (auto &&i : p) { 
-                    std::cout << "IP: " << i[0] << "." << i[1] << "." << i[2] << "." << i[3] << std::endl;
+                    std::cout << i[0] << "." << i[1] << "." << i[2] << "." << i[3] << std::endl;
                 };
             };
         
@@ -72,39 +73,16 @@ int main()
         // 1.70.44.170
         // 1.29.168.152
         // 1.1.234.8
-        std::vector<std::vector<int>> n_reverse = n_pool;
-        std::sort(n_reverse.begin(), n_reverse.end(), [](auto &a, auto &b){
+            // std::vector<std::vector<int>> n_reverse = n_pool;
+            // std::sort(n_reverse.begin(), n_reverse.end(), [](auto &a, auto &b){
+        std::sort(n_pool.begin(), n_pool.end(), [](auto &a, auto &b){
                 for (size_t i = 0; i < 4; i++) {
                     if (a[i] < b[i]) return false;
                     if (a[i] > b[i]) return true;
                 }
                 return true;
-                // return ((a[0]<<24) + 
-                //         (a[1]<<16) +
-                //         (a[2]<<8) + 
-                //         a[3]) 
-                //        <
-                //        ((b[0]<<24) +
-                //         (b[1]<<16) + 
-                //         (b[2]<<8) + 
-                //         b[3]);
             });
-        print_pool("Reverse lexicographically sort", n_reverse);
-
-        // for(std::vector<std::vector<std::string> >::const_iterator ip = ip_pool.cbegin(); ip != ip_pool.cend(); ++ip)
-        // {
-        //     for(std::vector<std::string>::const_iterator ip_part = ip->cbegin(); ip_part != ip->cend(); ++ip_part)
-        //     {
-        //         if (ip_part != ip->cbegin())
-        //         {
-        //             std::cout << ".";
-
-        //         }
-        //         std::cout << *ip_part;
-        //     }
-        //     std::cout << std::endl;
-        // }
-
+        print_pool("Reverse lexicographically sort", n_pool);
 
         // DONE filter by first byte and output
         // ip = filter(1)
@@ -170,7 +148,7 @@ int main()
         // 39.46.86.85
         // 5.189.203.46
         std::vector<std::vector<int>> n_pool_any;
-        std::copy_if(n_reverse.begin(), n_reverse.end(), std::back_inserter(n_pool_any), [n=46](auto const& ip){ 
+        std::copy_if(n_pool.begin(), n_pool.end(), std::back_inserter(n_pool_any), [n=46](auto const& ip){ 
                 return ip[0] == n || ip[1] == n || ip[2] == n || ip[3] == n;
             ;});
         print_pool("Filter by any byte and output, ip = filter_any(46)", n_pool_any);
