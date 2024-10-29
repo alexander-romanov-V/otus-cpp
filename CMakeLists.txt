@@ -26,16 +26,16 @@ if (MSVC)
     target_compile_options(ipfilter_cli PRIVATE
         /W4
     )
-    # target_compile_options(ipfilter_gtest PRIVATE
-    #     /W4
-    # )
+    target_compile_options(ipfilter_gtest PRIVATE
+        /W4
+    )
 else ()
     target_compile_options(ipfilter_cli PRIVATE
         -Wall -Wextra -pedantic -Werror
     )
-    # target_compile_options(ipfilter_gtest PRIVATE
-    #     -Wall -Wextra -pedantic -Werror
-    # )
+    target_compile_options(ipfilter_gtest PRIVATE
+        -Wall -Wextra -pedantic -Werror
+    )
 endif()
 
 install(TARGETS ipfilter_cli RUNTIME DESTINATION bin)
@@ -53,7 +53,7 @@ include(CPack)
 list(APPEND CMAKE_CTEST_ARGUMENTS "--output-on-failure")
 enable_testing()
 
-# add_test(ipfilter_gtest ipfilter_gtest)
+add_test(ipfilter_gtest ipfilter_gtest)
 add_test(
     NAME ipfilter_cli
     WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
